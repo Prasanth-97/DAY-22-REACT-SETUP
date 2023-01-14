@@ -1,11 +1,10 @@
 import "./App.css";
-import Message from "../src/constants/Message";
-
+import MessageProps from "../src/constants/Message"
 
 export default function App() {
   return (
     <div className="App">
-      {Message.length
+      {MessageProps.length
         ? Message.map((each) => <Msg name={each.name} pic={each.imageURL} />)
         : ""}
     </div>
