@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div className="App">
       {MessageProps.length
-        ? Message.map((each) => <Msg name={each.name} pic={each.imageURL} />)
+        ? MessageProps.map((each) => <Msg name={each.name} pic={each.imageURL} />)
         : ""}
     </div>
   );
